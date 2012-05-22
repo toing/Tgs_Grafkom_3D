@@ -46,6 +46,7 @@ display(void)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glColor3d(1,0,0);
 
+// Kubus
     glPushMatrix();
         glTranslated(-2.4,1.2,-6);
         glRotated(60,1,0,0);
@@ -53,6 +54,7 @@ display(void)
         glutSolidCube(1);
     glPopMatrix();
 
+// Segi Tiga
     glPushMatrix();
         glTranslated(0,1.2,-6);
         glRotated(60,1,0,0);
@@ -60,6 +62,7 @@ display(void)
         glutSolidTetrahedron();
     glPopMatrix();
 
+// Donut
     glPushMatrix();
         glTranslated(2.4,1.2,-6);
         glRotated(60,1,0,0);
@@ -67,6 +70,7 @@ display(void)
         glutSolidTorus(0.2,0.8,slices,stacks);
     glPopMatrix();
 
+// Bola
     glPushMatrix();
         glTranslated(-2.4,-1.2,-6);
         glRotated(60,1,0,0);
@@ -74,6 +78,7 @@ display(void)
         glutSolidSphere(1,slices,stacks);
     glPopMatrix();
 
+// Diamond atau permata
     glPushMatrix();
         glTranslated(0,-1.2,-6);
         glRotated(60,1,0,0);
@@ -81,6 +86,7 @@ display(void)
         glutSolidIcosahedron();
     glPopMatrix();
 
+// Teko
     glPushMatrix();
         glTranslated(2.4,-1.2,-6);
         glRotated(60,1,0,0);
