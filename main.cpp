@@ -71,21 +71,21 @@ display(void)
         glTranslated(-2.4,-1.2,-6);
         glRotated(60,1,0,0);
         glRotated(a,0,0,1);
-        glutWireSphere(1,slices,stacks);
+        glutSolidSphere(1,slices,stacks);
     glPopMatrix();
 
     glPushMatrix();
         glTranslated(0,-1.2,-6);
         glRotated(60,1,0,0);
         glRotated(a,0,0,1);
-        glutWireIcosahedron();
+        glutSolidIcosahedron();
     glPopMatrix();
 
     glPushMatrix();
         glTranslated(2.4,-1.2,-6);
         glRotated(60,1,0,0);
         glRotated(a,0,0,1);
-        glutWireTeapot(0.75);
+        glutSolidTeapot(0.75);
     glPopMatrix();
 
     glutSwapBuffers();
